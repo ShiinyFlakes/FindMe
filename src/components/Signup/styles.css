@@ -66,11 +66,14 @@
 	margin: 5px 0;
 	font-size: 14px;
 }
+.topic{
+	background-color: #3bb19b;
+}
 
 .error_msg, .success_msg
  {
 	width: 370px;
-	padding: 15px;
+	padding: 5px;
 	margin: 5px 0;
 	font-size: 14px;
 	background-color: #f34646;

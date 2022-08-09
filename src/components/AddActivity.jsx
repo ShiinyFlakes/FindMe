@@ -59,7 +59,7 @@ import { NavLink } from "react-router-dom";
         <AppBar sx={{ backgroundColor: "#3bb19b"}} position="sticky">
         <Toolbar >
           <Tabs
-            sx={{ ml: "auto" }}
+            sx={{ ml: "5px" }}
             textColor="inherit"
             indicatorColor="white"
             value={1}
@@ -83,7 +83,7 @@ import { NavLink } from "react-router-dom";
           alignSelf="center"
           marginLeft={"auto"}
           marginRight="auto"
-          marginTop={10}
+          marginTop={1}
         >
           <FormLabel>Kategorie</FormLabel>
           <TextField

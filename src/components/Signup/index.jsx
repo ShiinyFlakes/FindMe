@@ -24,7 +24,7 @@ const Signup = () => {
     const handleSubmit = async (e) =>{
         e.preventDefault();
         try{
-            const url = "http://localhost:8080/api/users";
+            const url = "http://localhost:3000/api/users";
             const {data:res} = await axios.post(url, data);
             setMsg(res.message);
          
@@ -45,16 +45,16 @@ const Signup = () => {
         <div className="login_container">
         <div className="login_form_container">
         <div className="left">
-        <h1>Welcome Back</h1>
+        <h1 className="topic">Gleich geht es los</h1>
         <Link to ="/login">
             <button type="button" className="white_btn">
-                Sign In
+                Einloggen
             </button>
         </Link>        
         </div>
         <div className="right">
             <form className="form_container" onSubmit={handleSubmit}>
-                <h1>Create Account</h1>
+                <h1>Registriere dich!</h1>
                 <input type="text" placeholder="Vorname"
                 name="firstName"
                 onChange={handleChange}
@@ -100,7 +100,7 @@ const Signup = () => {
                 {error && <div className="error_msg">{error}</div>}
                 {msg && <div className="success_msg">{msg}</div>}
                 <button type="submit" className="green_btn">
-                    Sign Up
+                    Erstellen
                 </button>
 
             </form>

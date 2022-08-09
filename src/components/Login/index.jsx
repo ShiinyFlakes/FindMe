@@ -40,7 +40,7 @@ const Signup = () => {
         <div className="login_form_container">
         <div className="left">
         <form className="form_container" onSubmit={handleSubmit}>
-                <h1>Login to your Account</h1>
+        <h1 className="heading1">FindMe! <br></br>Melde dich jetzt an</h1>
                  <input type="email" placeholder="Email"
                 name="email"
                 onChange={handleChange}
@@ -63,7 +63,7 @@ const Signup = () => {
             </form>
         </div>
         <div className="right">
-        <h1 style={{textAlign:"center"}}>Herzlich Willkommen auf FindMe</h1>
+        <h1 style={{textAlign:"center"}}>Herzlich Willkommen auf FindMe!</h1>
         <h1>Neu hier?</h1>
         <Link to ="/signup">
             <button type="button" className="white_btn">
