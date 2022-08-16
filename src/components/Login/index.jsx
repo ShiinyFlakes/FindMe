@@ -63,7 +63,7 @@ const Signup = () => {
             </form>
         </div>
         <div className="right">
-        <h1 style={{textAlign:"center"}}>Herzlich Willkommen auf FindMe!</h1>
+        <h1 style={{textAlign:"center" ,padding:"1rem"}}>Herzlich Willkommen auf FindMe!</h1>
         <h1>Neu hier?</h1>
         <Link to ="/signup">
             <button type="button" className="white_btn">

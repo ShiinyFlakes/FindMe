@@ -1,4 +1,4 @@
-import {Route, Routes, Navigate} from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Main from "./components/Main";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
@@ -12,24 +12,23 @@ import ActivityDetail from "./components/Activity/ActivityDetail";
 //import Header from "./components/Header";
 
 function App() {
-
   const user = localStorage.getItem("token");
 
   return (
-	<React.Fragment>	
-    <Routes>
-			{user && <Route path="/" exact element={<Main />} />}
-			{user && <Route path="/home" exact element={<Home />} />}
-			{user && <Route path="/add" exact element={<AddActivity />} />}
-			{user &&<Route path="/activitys" exact element={<Activitys />} />}
-			{user && <Route path="/about" exact element={<About />} />}
-			{user && <Route path="/activitys/:id" exact element={<ActivityDetail />} />}
-			<Route path="/signup" exact element={<Signup />} />
-			<Route path="/login" exact element={<Login />} />
-			<Route path="/" element={<Navigate replace to="/login" />} />
-			<Route path="/users/:id/verify/:token" element={<EmailVerify />} /> 
-		</Routes>
-  </React.Fragment>
+    <React.Fragment>
+      <Routes>
+        <Route path="/" exact element={<Main />} />
+        <Route path="/home" exact element={<Home />} />
+        <Route path="/add" exact element={<AddActivity />} />
+        <Route path="/activitys" exact element={<Activitys />} />
+        <Route path="/about" exact element={<About />} />
+        <Route path="/activitys/:id" exact element={<ActivityDetail />} />
+        <Route path="/signup" exact element={<Signup />} />
+        <Route path="/login" exact element={<Login />} />
+        <Route path="/" element={<Navigate replace to="/login" />} />
+        <Route path="/users/:id/verify/:token" element={<EmailVerify />} />
+      </Routes>
+    </React.Fragment>
   );
 }
 

@@ -58,12 +58,11 @@ const Main = () => {
           </div>
           <Button
             LinkComponent={Link}
-             sx={{ background: "#55f1d4" }}
+            to="/activitys"
+            sx={{ background: "#55f1d4" }}
             variant="contained"
           >
-            <div className="divBox">
-              <Typography variant="h3">Zu den Aktivitäten</Typography>
-            </div>
+            <Typography variant="h3">Zu den Aktivitäten</Typography>
           </Button>
         </AppBar>
       </div>
