@@ -5,6 +5,8 @@ import { AppBar, Tab, Tabs, Toolbar} from "@mui/material";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./about.css";
+import Freunde from "../../src/images/Freunde.jpg";
+
 
 const About = () => {
   const [value, setValue] = useState();
@@ -15,6 +17,8 @@ const About = () => {
 };
 
   return (
+    <div style={{ backgroundImage: `url(${Freunde})`,
+    backgroundPosition: "center", backgroundSize:"cover" }}>
     <div>
       <nav className="navbar">
       <a style={{textDecoration: "none"}} href="/">
@@ -38,12 +42,10 @@ const About = () => {
           </Tabs>
         </Toolbar>
       </AppBar>
-      <Box display="flex" flexDirection="column" alignItems="center">
-        <Typography sx={{ fontFamily: "fantasy" }} variant="h2">
+      <Box  display="flex" flexDirection="column" alignItems="center">
+        <Typography  sx={{ fontFamily: "fantasy", color: "whitesmoke" }} variant="h2">
           Full-Stack MERN Application
-        </Typography>
-        <Typography sx={{ fontFamily: "fantasy" }} variant="h3">
-          By Mago Osei Kawan
+          By Kawan Osei Mago
         </Typography>
         <Button
           LinkComponent={Link}
@@ -54,6 +56,7 @@ const About = () => {
           <Typography variant="h3">Zu den Aktivitäten</Typography>
         </Button>
       </Box>
+    </div>
     </div>
   );
 };

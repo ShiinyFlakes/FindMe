@@ -4,6 +4,8 @@ import axios from "axios";
 import Activity from "./Activity";
 import { AppBar, Tab, Tabs, Toolbar} from "@mui/material";
 import { NavLink } from "react-router-dom";
+import Freunde from "../../images/Freunde.jpg";
+
 
 const URL = "http://localhost:3000/activitys";
 const fetchHandler = async () => {
@@ -23,7 +25,8 @@ const Activitys = () => {
   }, []);
   console.log(activitys);
   return (
-    <div>
+    <div style={{ backgroundImage: `url(${Freunde})`,
+    backgroundPosition: "center", backgroundSize:"cover" }}>
       <nav className="navbar">
               <a style={{textDecoration: "none"}} href="/"><h1>FindMe</h1></a>
               <button className="white_btn" onClick={handleLogout}>

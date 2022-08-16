@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { AppBar, Tab, Tabs, Toolbar} from "@mui/material";
 import { NavLink, Link } from "react-router-dom";
 import { Button, Box, Typography } from "@mui/material";
+import Freunde from "../../images/Freunde.jpg";
 
 
 const Main = () => {
@@ -24,7 +25,8 @@ const Main = () => {
                 </button>
             </nav>
             <div className="content">
-            <AppBar sx={{ backgroundColor: "#3bb19b"}} position="sticky">
+            <AppBar style={{ backgroundImage: `url(${Freunde})`,
+          backgroundPosition: "center", backgroundSize:"cover" }} position="sticky">
         <Toolbar >
           <Tabs
             sx={{ ml: "auto" }}
@@ -38,7 +40,9 @@ const Main = () => {
             <Tab LinkComponent={NavLink} to="/about" label="Über uns" />
           </Tabs>
         </Toolbar>
+        <div className="transparent">
         <h4 style={{textAlign:"center"}}>Willkommen auf FindMe</h4>
+       </div>
         <Button
           LinkComponent={Link}
           to="/activitys"

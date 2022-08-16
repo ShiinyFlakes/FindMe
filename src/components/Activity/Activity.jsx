@@ -16,7 +16,7 @@ const Activity = (props) => {
   };
 
   return (
-    <div className="card">
+    <div className="card" style={{ color:"white" }}>
       <article>In {ort}</article>
       <h3>Kategorie {kategorie}</h3>
       <h3>Beschreibung:</h3> <p>{beschreibung}</p>
