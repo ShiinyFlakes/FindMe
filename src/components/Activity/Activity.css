@@ -21,6 +21,7 @@ ul {
     height: 100%;
     width: 100%;
     box-shadow: 5px 5px 10px #ccc;
+    border: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;

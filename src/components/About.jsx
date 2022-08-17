@@ -20,7 +20,7 @@ const About = () => {
     <div style={{ backgroundImage: `url(${Freunde})`,
     backgroundPosition: "center", backgroundSize:"cover" }}>
     <div>
-      <nav className="navbar">
+      <nav  className="navbar">
       <a style={{textDecoration: "none"}} href="/">
       <h1>FindMe</h1></a>
                 <button className="white_btn" onClick={handleLogout}>
@@ -28,7 +28,7 @@ const About = () => {
                 </button>
             </nav>
             <AppBar sx={{ backgroundColor: "#3bb19b"}} position="sticky">
-        <Toolbar >
+        <Toolbar  >
           <Tabs
             sx={{ ml: "auto" }}
             textColor="inherit"
@@ -43,7 +43,7 @@ const About = () => {
         </Toolbar>
       </AppBar>
       <Box  display="flex" flexDirection="column" alignItems="center">
-        <Typography  sx={{ fontFamily: "fantasy", color: "whitesmoke" }} variant="h2">
+        <Typography  sx={{ fontFamily: "fantasy", color: "#3bb19b" }} variant="h2">
           Full-Stack MERN Application
           By Kawan Osei Mago
         </Typography>

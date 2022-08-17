@@ -38,7 +38,7 @@ const Activitys = () => {
           <Tabs
             sx={{ ml: "auto" }}
             textColor="inherit"
-            indicatorColor="white"
+            indicatorColor="primary"  
             value={1}
             onChange={(e, val) => setValue(val)}
           >

@@ -31,7 +31,7 @@ const Main = () => {
           <Tabs
             sx={{ ml: "auto" }}
             textColor="inherit"
-            indicatorColor="white"
+            indicatorColor="primary"
             value={1}
             onChange={(e, val) => setValue(val)}
           >
@@ -43,7 +43,7 @@ const Main = () => {
         <div className="transparent">
         <h4 style={{textAlign:"center"}}>Willkommen auf FindMe</h4>
        </div>
-        <Button
+        <Button style={{backgroundColor:"#3bb19b"}}
           LinkComponent={Link}
           to="/activitys"
           sx={{background: "#55f1d4" }}

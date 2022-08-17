@@ -99,7 +99,8 @@ const Signup = () => {
                 />
                 {error && <div className="error_msg">{error}</div>}
                 {msg && <div className="success_msg">{msg}</div>}
-                <button type="submit" className="green_btn">
+                <button style={{backgroundColor:"white",
+            color:"#3bb19b"}} type="submit" className="green_btn" >
                     Erstellen
                 </button>
 
